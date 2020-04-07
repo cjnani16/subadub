@@ -352,6 +352,7 @@ scriptElem.text = `
           const cueElem = document.createElement('div');
           cueElem.style.cssText = 'background: rgba(0,0,0,0.8); white-space: pre-wrap; padding: 0.2em 0.3em; margin: 10px auto; width: fit-content; width: -moz-fit-content; pointer-events: auto';
           cueElem.innerHTML = vttTextToSimple(cue.text, true); // may contain simple tags like <i> etc.
+          if (track.language == "zh_HK" || track.language == "zh_TW") cueElem.innerHTML = TongWen.convert(cueElem.innerHTML, TongWen.flagSimp); //Use TongWen to convert plaintext Traditional Chinese
           customSubsElem.appendChild(cueElem);
         }
       }, false);
