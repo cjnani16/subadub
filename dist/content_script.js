@@ -1,6 +1,20 @@
 
 // console.log('content script starting');
 
+//create script tags for XinTongWen
+var addresses = ["http://tongwen.openfoundry.org/src/web/tongwen_core.js", 
+                 "http://tongwen.openfoundry.org/src/web/tongwen_table_s2t.js", 
+                 "http://tongwen.openfoundry.org/src/web/tongwen_table_t2s.js", 
+                 "http://tongwen.openfoundry.org/src/web/tongwen_table_ps2t.js", 
+                 "http://tongwen.openfoundry.org/src/web/tongwen_table_pt2s.js"];
+
+function addXTWScriptToHTML(item,index) {
+  var xtw = document.createElement("script");
+  xtw.src = item;
+  document.head.insert(xtw);
+}
+addresses.forEach(addXTWScriptToHTML);
+
 const styleElem = document.createElement('style');
 styleElem.type = 'text/css';
 styleElem.textContent = `
