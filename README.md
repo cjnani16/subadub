@@ -1,3 +1,7 @@
+# My Changes
+
+Now simplifies Traditional characters so I can read them! :P
+
 # Subadub
 
 Subadub is a browser extension for Chrome and Firefox that enhances Netflix subtitles for foreign language study.
