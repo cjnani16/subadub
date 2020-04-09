@@ -1,6 +1,6 @@
 # My Changes
 
-Now simplifies Traditional characters so I can read them! :P
+Now simplifies Traditional characters so I can read them! :P Plus a few cosmetic changes to the subs themselves.
 
 # Subadub
 
